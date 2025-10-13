@@ -1,11 +1,13 @@
-import OverlineWithVersion from '@theme/OverlineWithVersion';
+import CheckIcon from '@mui/icons-material/Check';
+import Chip from '@mui/material/Chip';
+import Grid from '@mui/material/Grid';
 import SchemaUri from '@theme/SchemaUri';
 import FlatProperties from './_generated/flatmd/objects/unstructured-quad-grid-1.3.0.md';
 
-<OverlineWithVersion title="Geoscience Objects" version="1.3.0" badge="supported" />
-
+<Grid container>
 # unstructured-quad-grid
-
+<Chip color="info" icon={<CheckIcon />} label="Supported" style={{margin: '0.75em'}} />
+</Grid>
 <SchemaUri uri="schema/objects/unstructured-quad-grid/1.3.0/unstructured-quad-grid.schema.json" />
 
 Represents an unstructured grid where cells are quadrilaterals.

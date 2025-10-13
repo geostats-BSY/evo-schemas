@@ -1,11 +1,13 @@
-import OverlineWithVersion from '@theme/OverlineWithVersion';
+import CheckIcon from '@mui/icons-material/Check';
+import Chip from '@mui/material/Chip';
+import Grid from '@mui/material/Grid';
 import SchemaUri from '@theme/SchemaUri';
 import FlatProperties from './_generated/flatmd/objects/resistivity-ip-1.1.0.md';
 
-<OverlineWithVersion title="Geoscience Objects" version="1.3.0" badge="supported" />
-
+<Grid container>
 # resistivity-ip
-
+<Chip color="info" icon={<CheckIcon />} label="Supported" style={{margin: '0.75em'}} />
+</Grid>
 <SchemaUri uri="schema/objects/regular-masked-3d-grid/1.3.0/regular-masked-3d-grid.schema.json" />
 
 A resistivity-IP object represents geolocated, time-stamped resistivity and induced polarization (IP) survey data. This data is used extensively in exploration for mineral resources, environmental investigations, and other fields where the electrical properties of subsurface materials provide insight.

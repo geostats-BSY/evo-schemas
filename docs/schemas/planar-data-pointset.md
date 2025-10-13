@@ -1,11 +1,13 @@
-import OverlineWithVersion from '@theme/OverlineWithVersion';
+import CheckIcon from '@mui/icons-material/Check';
+import Chip from '@mui/material/Chip';
+import Grid from '@mui/material/Grid';
 import SchemaUri from '@theme/SchemaUri';
 import FlatProperties from './_generated/flatmd/objects/planar-data-pointset-1.3.0.md';
 
-<OverlineWithVersion title="Geoscience Objects" version="1.3.0" badge="supported" />
-
+<Grid container>
 # planar-data-pointset
-
+<Chip color="info" icon={<CheckIcon />} label="Supported" style={{margin: '0.75em'}} />
+</Grid>
 <SchemaUri uri="schema/objects/planar-data-pointset/1.3.0/planar-data-pointset.schema.json" />
 
 The `planar-data-pointset` schema is a variant of the generic [pointset](pointset.md) schema. See that schema for general information.
